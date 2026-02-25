@@ -1,0 +1,66 @@
+/* App */
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Layout */
+
+.layout {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .layout.collapsed {
+    grid-template-columns: 1fr; 
+  }
+
+  
+  .layout.collapsed .menu-item {
+    padding: 16px 4px;
+  }
+
+
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .search-box {
+    display: none;
+  }
+  
+}
+
+/* 레이아웃 그리드 비율 변경 */
+.layout.collapsed {
+  grid-template-columns: 72px 1fr;
+}
+
+/* 접혔을 때 텍스트 숨기기 */
+.layout.collapsed .sidebar span,
+.layout.collapsed .sidebar-title,
+.layout.collapsed .divider {
+  display: none;
+}
+
+/* 접혔을 때 메뉴 아이템 중앙 정렬 */
+.layout.collapsed .menu-item {
+  justify-content: center;
+  padding: 16px 0;
+}
+
+/* 애니메이션 효과 (부드럽게) */
+.layout, .sidebar, .menu-item span {
+  transition: all 0.2s ease-in-out;
+}

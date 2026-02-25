@@ -1,0 +1,24 @@
+/* Search */
+
+.search-box {
+  flex: 1;
+  max-width: 600px;
+  margin: 0 20px;
+  display: flex;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  background: transparent;
+  color: var(--text);
+}
+
+.search-box button {
+  border: 1px solid var(--border);
+  border-left: none;
+  background: var(--filter-bg);
+  border-radius: 0 8px 8px 0;
+}

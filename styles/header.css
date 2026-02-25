@@ -1,0 +1,82 @@
+/* Header */
+
+.header-left {
+  display: flex;
+  align-items: center;
+  width: 140px;
+}
+
+.header {
+  height: 56px;
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--border);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 16px;
+}
+
+
+
+.youtube-logo {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 6px 2px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: url('avatar-1.png') no-repeat center center;
+  background-size: cover;
+}
+
+.icon-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  color: #000;
+}
+
+.icon-btn:hover {
+  background: var(--hover);
+}
+
+.icon-svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+  color: var(--text);
+}
+
+.dark .icon-btn {
+  color: #fff;
+}
+
+
+.profile {
+  width: 32px;
+  height: 32px;
+  background: #4caf50;
+  border-radius: 50%;
+}

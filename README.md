@@ -49,20 +49,23 @@ YouTube 메인 페이지 UI를 클론하여
 ---
 
 ## 📂 프로젝트 구조
+
+```
 project
 │
 ├─ index.html
 ├─ styles/
-│ ├─ general.css
-│ ├─ header.css
-│ ├─ sidebar.css
-│ ├─ search.css
-│ └─ layout.css
+│   ├─ general.css
+│   ├─ header.css
+│   ├─ sidebar.css
+│   ├─ search.css
+│   └─ layout.css
 │
 └─ assets/
-└─ images/
-├─ thumbnails/
-└─ avatars/
+    └─ images/
+        ├─ thumbnails/
+        └─ avatars/
+```
 ---
 
 ## 👤 제작자
